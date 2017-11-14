@@ -12,7 +12,7 @@ fc=sqlQuery(cn, "SELECT * FROM dbo.fc")
 View(fc)          
 
 #Counting the number of female students 
-genFcount=sqlQuery(cn, "SELECT * COUNT(DISTINCT STC_PERSON_ID ) FROM dbo.fc WHERE GENDER='F' ")
+genFcount=sqlQuery(cn, "SELECT * COUNT(DISTINCT ID ) FROM dbo.fc WHERE GENDER='F' ")
 gen=genFcount$GENDER
 
 ## Including Plots of gender
